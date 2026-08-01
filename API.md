@@ -35,7 +35,9 @@ GET 	/api/menus/:id/orders/:order_id  Lấy đơn đặt hàng
 PUT 	/api/menus/:id/orders/:order_id  Chỉnh sửa đơn hàng
 POST	/api/menus/:id/orders/:order_id  Gửi đơn đặt hàng
 
-
+* 7. Statistic
+GET 	/api/menus/statistic         Lấy dữ liệu thống kê của menu
+GET     /api/stores/:id/statistic    Lấy dữ liệu thống kê của quán
 # Setting cho các màn
 
 * Màn Login
@@ -44,7 +46,7 @@ POST	/api/auth/login                Đăng nhập
 * Màn Dashboard
 GET 	/api/menus/:menuId/participants/Limit&status=...	Danh sách người tham gia menu 
 GET	        /api/menus	               Danh sách menu
-
+GET 	/api/menus/statistic  Lấy dữ liệu thống kê
 
 Thống kê đặt hàng?
 
@@ -79,8 +81,8 @@ PUT	        /api/stores/:id	                                  Cập nhật quán
 GET  	/api/stores/:id/products                      Lấy danh sách món của quán
 POST      /api/stores/:id/products                      Thêm món cho quán
 PUT        /api/stores/:id/products/product_id     Sửa thông tin món
-DELETE /api/stores/:id/products/product_id     Xóa món
-
+DELETE /api/stores/:id/products/product_id         Xóa món
+GET     /api/stores/:id/statistic                  Lấy dữ liệu thống kê của quán
 
 
 
