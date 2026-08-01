@@ -43,6 +43,7 @@ Table stores as ST {
   id int [pk, increment]
   name varchar [not null]
   address varchar
+  bookedCount int
   description varchar
   type varchar
   phone varchar
